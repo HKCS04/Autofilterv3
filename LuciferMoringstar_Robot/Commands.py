@@ -84,7 +84,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('💌 SUBSCRIBE ✅', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('💌 JOIN NOW', url='https://t.me/MalluChithrangal1')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -112,10 +112,9 @@ async def start(bot, message):
         await message.reply_photo(photo=START_IMG, caption=START_MSG.format(message.from_user.mention),
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("📺 𝗦𝗘𝗔𝗥𝗖𝗛 𝗛𝗘𝗥𝗘 🔍", switch_inline_query_current_chat='')
                 ],[
-                InlineKeyboardButton("📥 𝗠𝗢𝗩𝗜𝗘𝗦 📥", url='https://t.me/MMOTTMOVIE'),
-                InlineKeyboardButton("💌 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗕𝗘 💌", url='https://youtu.be/2tek7Y5CEF4'),
+                InlineKeyboardButton("📥 𝗠𝗢𝗩𝗜𝗘𝗦 📥", url='https://t.me/MalluChithrangal1'),
+                InlineKeyboardButton("💌 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗕𝗘 💌", url='https://t.me/MalluChithrangal1'),
                 ]]
             )
         )
@@ -325,10 +324,4 @@ async def delete(bot, message):
         await msg.edit('File not found in database')
 @Client.on_message(filters.command('about'))
 async def bot_info(bot, message):
-    buttons = [
-        [
-            
-            InlineKeyboardButton('SUBSCRIBE 🔔', url=f'{TUTORIAL}')
-        ]
-        ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
