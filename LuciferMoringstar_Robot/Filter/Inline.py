@@ -88,14 +88,6 @@ async def answer(bot, query):
 
 
 def get_reply_markup(query):
-    buttons = [[
-        InlineKeyboardButton('📺 SUBSCRIBE 📺', url=f'{TUTORIAL}')
-        ],[
-        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat=query)
-        ]]
-    return InlineKeyboardMarkup(buttons)
-
-
 def get_size(size):
     """Get size in readable format"""
 
