@@ -28,13 +28,11 @@ Bot Owner Only
 """
 
 ABOUT = """
-➥ Name :  SAMANTHA MOVIE BOT
+➥ Name :  Black Widow
     
-➥ Creator : [LXR YOUTUBER](https://youtube.com/channel/UCqRmM0N9Z-7bBiTqJsfFWwg)
+➥ Creator : @MR_TRUE_BOY_01
 
 ➥ Language : Python3
 
 ➥ Library : Pyrogram Asyncio 1.13.0
-
-➥ Tutorial : [Click Me](https://youtube.com/channel/UCqRmM0N9Z-7bBiTqJsfFWwg)
 """
